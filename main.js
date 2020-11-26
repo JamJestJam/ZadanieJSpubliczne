@@ -13,17 +13,17 @@ function setImage(i){
 
 setImage(0);
 
-let gallery = document.querySelector("#dynamicGallery")
+let jGallery = document.querySelector("#dynamicGallery")
 
 let seed = 1;
 const loadImage = (num) => {
-    if (gallery.childElementCount < num) {
+    if (jGallery.childElementCount < num) {
         const img = document.createElement("img")
         img.src = `https://picsum.photos/seed/${seed++}/300/200`
         img.addEventListener("load", (e)=>{
-            gallery.appendChild(img)
+            jGallery.appendChild(img)
             loadImage(num);
         })
     }
 }
-loadImage(5)
+loadImage(6)
