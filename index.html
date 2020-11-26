@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Document</title>
+    <style>
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-y: scroll;
+            width: 2000px;
+            height: 650px;
+        }
+        .image{
+            margin: 10px;
+        }
+    </style>
 </head>
+
 <body>
     <div id="marek" style="height: 300px; overflow-x: scroll; display: flex;">
 
@@ -21,5 +36,13 @@
 
     </div> -->
     <script src="main.js"></script>
+    <div class="gallery">
+        <div class="image"><img src="https://picsum.photos/300/300?random=1" alt=""></div>
+        <div class="image"><img src="https://picsum.photos/300/300?random=2" alt=""></div>
+        <div class="image"><img src="https://picsum.photos/300/300?random=3" alt=""></div>
+        <div class="image"><img src="https://picsum.photos/300/300?random=4" alt=""></div>
+        <div class="image"><img src="https://picsum.photos/300/300?random=5" alt=""></div>
+    </div>
 </body>
+
 </html>
